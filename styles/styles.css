@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+main {
+    display: flex;
+    margin-top: 20px;
+    padding: 0px 30px;
+
+}
+
+figure {
+    flex: 3 1 0;
+}
+
+.image {
+    margin-top: 100px;
+}
+
+figure img {
+   
+    width: 100%;
+}
+
+figure p {
+    width: 90%;
+    line-height: 1.5;
+}
+
+.author {
+    font-weight: bold;
+}
+
+aside {
+    flex: 1 1 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#container-search {
+    display: flex;
+}
+
+#search, .tags, #category {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: rgb(39, 129, 231);
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid transparent;
+    color: aliceblue;
+}
+
+#category ul{
+    padding: 0px;
+    line-height: 2;
+}
+
+
+#tags ul{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+#tags ul li{
+    padding: 0.5rem 0.7rem;
+    background-color: #cecaca;
+    border-radius: 0.2rem;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*media*/
+@media screen and (max-width:450px) {
+    main{
+        flex-wrap: wrap;
+    }
+    
+}
